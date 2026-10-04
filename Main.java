@@ -8,14 +8,12 @@ public class Main {
 
     System.out.println("received" + Arrays.toString(pattern));
     String randWord = randomWord.input(pattern[0]);
-    // String web = website.input();
-    // String favNum = favNumber.input();
-    // String symbol = "@#";
+    String[] web = website.input(pattern[1]);
+    String symbol = symbols.input(pattern[2]);
+    String favNum = "hey";
 
-    // String pass = randWord.substring(0, pattern[0]) + web.substring(1,
-    // pattern[1]) + symbol.substring(0, pattern[2])
-    // + favNum.substring(0, pattern[3]);
-    // System.out.println("passowrd for " + web + ":" + pass);
+    String pass = randWord + web[0] + symbol + favNum;
+    System.out.println("passowrd for " + web[1] + ":" + pass);
 
   }
 }

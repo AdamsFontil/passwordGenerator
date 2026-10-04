@@ -16,10 +16,7 @@ public class randomWord {
         System.out.println("Please type a word that is between 5 and 32 letters long.");
       }
     }
-    System.out.println("Chosen word:" + word);
-    int wordStart = callRand.output(word.length() - finalLen);
-    String finalWord = word.substring(wordStart, wordStart + finalLen);
-    System.out.println("final word: " + finalWord);
+    String finalWord = callRand.output(finalLen, word);
     return finalWord;
   }
 }
