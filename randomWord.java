@@ -1,7 +1,8 @@
 import java.util.Scanner;
+import java.util.Random;
 
 public class randomWord {
-  public static String input() {
+  public static String input(int finalLen) {
     Scanner scanner = new Scanner(System.in);
     System.out.println("Please type a random word, one that is not personably identifiable");
 
@@ -15,8 +16,10 @@ public class randomWord {
         System.out.println("Please type a word that is between 5 and 32 letters long.");
       }
     }
-
     System.out.println("Chosen word:" + word);
-    return word;
+    int wordStart = callRand.output(word.length() - finalLen);
+    String finalWord = word.substring(wordStart, wordStart + finalLen);
+    System.out.println("final word: " + finalWord);
+    return finalWord;
   }
 }
