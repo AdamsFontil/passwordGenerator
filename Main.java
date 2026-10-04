@@ -10,7 +10,7 @@ public class Main {
     String randWord = randomWord.input(pattern[0]);
     String[] web = website.input(pattern[1]);
     String symbol = symbols.input(pattern[2]);
-    String favNum = "hey";
+    String favNum = favNumber.input(pattern[2]);
 
     String pass = randWord + web[0] + symbol + favNum;
     System.out.println("passowrd for " + web[1] + ":" + pass);
