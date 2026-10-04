@@ -9,10 +9,10 @@ public class website {
 
     while (true) {
       website = scanner.nextLine();
-      if (website.length() >= 5 && website.length() <= 32) {
+      if (website.length() >= 6 && website.length() <= 32) {
         break;
       } else {
-        System.out.println("Please type a website that is between 5 and 32 letters long.");
+        System.out.println("Please type a website that is between 6 and 32 letters long.");
       }
     }
 
