@@ -13,7 +13,8 @@ public class Main {
     String favNum = favNumber.input(pattern[2]);
 
     String pass = randWord + web[0] + symbol + favNum;
-    System.out.println("passowrd for " + web[1] + ":" + pass);
+    String message = "passowrd for " + web[1] + ": " + pass + "\n";
+    printFile.output(message);
 
   }
 }
